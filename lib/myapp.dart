@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:routinery_clone_coding_with_flutter/MainPage/main_page.dart';
 import 'package:routinery_clone_coding_with_flutter/MyPage/my_page.dart';
 import 'package:routinery_clone_coding_with_flutter/SearchPage/search_page.dart';
 import 'package:routinery_clone_coding_with_flutter/StatisticsReportsPage/statistics_reports_page.dart';
@@ -15,7 +16,7 @@ class _AppState extends State<App> with TickerProviderStateMixin {
   int _selectedIndex = 3;
 
   static const List<Widget> _pageList = <Widget>[
-    MyPage(),
+    MainPage(),
     SearchPage(),
     StatisticsReportsPage(),
     MyPage(),
@@ -59,7 +60,9 @@ class _AppState extends State<App> with TickerProviderStateMixin {
               icon: Icon(
                 Icons.watch_later_outlined,
                 size: 30,
-                color: _selectedIndex == 0 ? Colors.black : Colors.grey.withOpacity(0.5),
+                color: _selectedIndex == 0
+                    ? Colors.black
+                    : Colors.grey.withOpacity(0.5),
               ),
             ),
             IconButton(
@@ -71,7 +74,9 @@ class _AppState extends State<App> with TickerProviderStateMixin {
               icon: Icon(
                 Icons.explore_outlined,
                 size: 30,
-                color: _selectedIndex == 1 ? Colors.black : Colors.grey.withOpacity(0.5),
+                color: _selectedIndex == 1
+                    ? Colors.black
+                    : Colors.grey.withOpacity(0.5),
               ),
             ),
             IconButton(
@@ -83,7 +88,9 @@ class _AppState extends State<App> with TickerProviderStateMixin {
               icon: Icon(
                 Icons.bar_chart_rounded,
                 size: 30,
-                color: _selectedIndex == 2 ? Colors.black : Colors.grey.withOpacity(0.5),
+                color: _selectedIndex == 2
+                    ? Colors.black
+                    : Colors.grey.withOpacity(0.5),
               ),
             ),
             IconButton(
@@ -95,7 +102,9 @@ class _AppState extends State<App> with TickerProviderStateMixin {
               icon: Icon(
                 Icons.person_outlined,
                 size: 30,
-                color: _selectedIndex == 3 ? Colors.black : Colors.grey.withOpacity(0.5),
+                color: _selectedIndex == 3
+                    ? Colors.black
+                    : Colors.grey.withOpacity(0.5),
               ),
             ),
           ],
