@@ -10,7 +10,7 @@ Widget createSettingMenu(String title, IconData icons) {
           children: [
             Text(
               title,
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
             ),
             IconButton(
               onPressed: () {},
@@ -23,7 +23,7 @@ Widget createSettingMenu(String title, IconData icons) {
         ),
       ),
       Padding(
-        padding: EdgeInsets.symmetric(horizontal: 8.0),
+        padding: const EdgeInsets.symmetric(horizontal: 8.0),
         child: Divider(
           height: 0,
           thickness: 1.5,
