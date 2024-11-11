@@ -13,20 +13,14 @@ class App extends StatefulWidget {
 
 class _AppState extends State<App> with TickerProviderStateMixin {
   late final TabController _tabController;
-  int _selectedIndex = 3;
+  int _selectedIndex = 0;
 
-  static const List<Widget> _pageList = <Widget>[
+  static final List<Widget> _pageList = <Widget>[
     MainPage(),
     SearchPage(),
-    StatisticsReportsPage(),
-    MyPage(),
+    const StatisticsReportsPage(),
+    const MyPage(),
   ];
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
 
   @override
   void initState() {
