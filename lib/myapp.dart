@@ -33,6 +33,20 @@ class _AppState extends State<App> with TickerProviderStateMixin {
     _tabController.dispose();
     super.dispose();
   }
+  Widget _buildIconButton(int index, IconData iconData) {
+    return IconButton(
+      onPressed: () {
+        setState(() {
+          _selectedIndex = index;
+        });
+      },
+      icon: Icon(
+        iconData,
+        size: 30,
+        color: _selectedIndex == index ? Colors.black : Colors.grey.withOpacity(0.5),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,62 +59,10 @@ class _AppState extends State<App> with TickerProviderStateMixin {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            IconButton(
-              onPressed: () {
-                setState(() {
-                  _selectedIndex = 0;
-                });
-              },
-              icon: Icon(
-                Icons.watch_later_outlined,
-                size: 30,
-                color: _selectedIndex == 0
-                    ? Colors.black
-                    : Colors.grey.withOpacity(0.5),
-              ),
-            ),
-            IconButton(
-              onPressed: () {
-                setState(() {
-                  _selectedIndex = 1;
-                });
-              },
-              icon: Icon(
-                Icons.explore_outlined,
-                size: 30,
-                color: _selectedIndex == 1
-                    ? Colors.black
-                    : Colors.grey.withOpacity(0.5),
-              ),
-            ),
-            IconButton(
-              onPressed: () {
-                setState(() {
-                  _selectedIndex = 2;
-                });
-              },
-              icon: Icon(
-                Icons.bar_chart_rounded,
-                size: 30,
-                color: _selectedIndex == 2
-                    ? Colors.black
-                    : Colors.grey.withOpacity(0.5),
-              ),
-            ),
-            IconButton(
-              onPressed: () {
-                setState(() {
-                  _selectedIndex = 3;
-                });
-              },
-              icon: Icon(
-                Icons.person_outlined,
-                size: 30,
-                color: _selectedIndex == 3
-                    ? Colors.black
-                    : Colors.grey.withOpacity(0.5),
-              ),
-            ),
+            _buildIconButton(0, Icons.watch_later_outlined),
+            _buildIconButton(1, Icons.explore_outlined),
+            _buildIconButton(2, Icons.bar_chart_rounded),
+            _buildIconButton(3, Icons.person_outlined),
           ],
         ),
       ),
