@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Activities extends StatelessWidget {
-  Activities(
+  const Activities(
       {super.key,
       required this.imagesName,
       required this.title,
@@ -38,7 +37,7 @@ class Activities extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 2.0),
             child: Text(
               title,
-              style: TextStyle(fontSize: 20),
+              style: const TextStyle(fontSize: 20),
             ),
           ),
           Padding(
@@ -54,14 +53,14 @@ class Activities extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.favorite_border_outlined,
                     size: 20,
                     color: Colors.grey,
                   ),
                   Text(
                     '$like',
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 11,
                         fontWeight: FontWeight.w900,
                         color: Color(0xFFe59a00)),
