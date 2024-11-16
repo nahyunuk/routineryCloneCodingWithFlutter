@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SearchPageRoutineType extends StatelessWidget {
-   SearchPageRoutineType(
+   const SearchPageRoutineType(
       {super.key, required this.title, required this.selected,required this.action});
 
   final String title;
