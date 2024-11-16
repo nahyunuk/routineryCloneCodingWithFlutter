@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:routinery_clone_coding_with_flutter/SearchPage/Widget/search_page_routines_container.dart';
+import 'package:routinery_clone_coding_with_flutter/SearchPage/Explore/Widget/search_page_routines_container.dart';
 
 class SearchPageMorningRoutine extends StatefulWidget {
   const SearchPageMorningRoutine({super.key});
@@ -46,7 +46,7 @@ class _SearchPageMorningRoutineState extends State<SearchPageMorningRoutine> {
         SizedBox(
           height: 740,
           child: ListView.builder(
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: routinesMap.length,
             itemBuilder: (context, index) {
               return routinesContainer(
