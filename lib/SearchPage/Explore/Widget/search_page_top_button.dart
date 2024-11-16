@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class SearchPageTopButton extends StatefulWidget {
+class SearchPageTopButton extends StatelessWidget {
   const SearchPageTopButton(
       {super.key, required this.buttonAction, required this.text,required this.selected});
 
@@ -9,14 +9,9 @@ class SearchPageTopButton extends StatefulWidget {
   final bool selected;
 
   @override
-  State<SearchPageTopButton> createState() => _SearchPageTopButtonState();
-}
-
-class _SearchPageTopButtonState extends State<SearchPageTopButton> {
-  @override
   Widget build(BuildContext context, ) {
     return GestureDetector(
-      onTap: widget.buttonAction,
+      onTap: buttonAction,
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30),
@@ -26,12 +21,12 @@ class _SearchPageTopButtonState extends State<SearchPageTopButton> {
           child: Padding(
             padding: const EdgeInsets.all(12.0),
             child: Text(
-              widget.text,
+              text,
               style: TextStyle(
                   fontFamily: 'LeagueSpartan',
                   fontSize: 24,
                   color:
-                      widget.selected ? Colors.black : Colors.black.withOpacity(0.3)),
+                      selected ? Colors.black : Colors.black.withOpacity(0.3)),
             ),
           ),
         ),
