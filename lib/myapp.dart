@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:routinery_clone_coding_with_flutter/MainPage/main_page.dart';
 import 'package:routinery_clone_coding_with_flutter/MyPage/my_page.dart';
-import 'package:routinery_clone_coding_with_flutter/SearchPage/Explore/search_page.dart';
+import 'package:routinery_clone_coding_with_flutter/SearchPage/search_page.dart';
 import 'package:routinery_clone_coding_with_flutter/StatisticsReportsPage/statistics_reports_page.dart';
 
 class App extends StatefulWidget {
