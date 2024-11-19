@@ -4,7 +4,7 @@ import 'package:routinery_clone_coding_with_flutter/MainPage/Widget/main_page_ro
 class MainPage extends StatelessWidget {
   MainPage({super.key});
 
-  final List<Map<String, String>> routinMap = [
+  final List<Map<String, String>> routineMap = [
     {
       'moringOrEvening': '저녁',
       'startTime': '오후 11:00',
@@ -100,16 +100,16 @@ class MainPage extends StatelessWidget {
             ),
             Expanded(
               child: ListView.builder(
-                itemCount: routinMap.length,
+                itemCount: routineMap.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Column(
                     children: [
                       createRoutin(
                           context,
-                          routinMap[index]['moringOrEvening']!,
-                          routinMap[index]['startTime']!,
-                          routinMap[index]['endTime']!,
-                          routinMap[index]['dayOfWeek']!),
+                          routineMap[index]['moringOrEvening']!,
+                          routineMap[index]['startTime']!,
+                          routineMap[index]['endTime']!,
+                          routineMap[index]['dayOfWeek']!),
                       SizedBox(height: 10),
                     ],
                   );
