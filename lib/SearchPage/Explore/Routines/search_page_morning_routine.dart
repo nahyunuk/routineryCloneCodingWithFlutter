@@ -35,7 +35,6 @@ class _SearchPageMorningRoutineState extends State<SearchPageMorningRoutine> {
       'popular': false,
       'beginner': false,
     },
-
   ];
 
   @override
