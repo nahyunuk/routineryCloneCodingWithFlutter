@@ -61,7 +61,7 @@ class MyPage extends StatelessWidget {
             ),
             createSettingMenu('자주 묻는 질문',Icons.arrow_forward_ios_sharp),
             createSettingMenu('루틴 잘하는 팁',Icons.arrow_forward_ios_sharp),
-            createSettingMenu('단죽어 활용 팁',Icons.arrow_forward_ios_sharp),
+            createSettingMenu('단축어 활용 팁',Icons.arrow_forward_ios_sharp),
             const SizedBox(
               height: 30,
             ),
